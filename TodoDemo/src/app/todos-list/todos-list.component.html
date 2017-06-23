@@ -1,0 +1,5 @@
+<div class="list-group">
+  <app-todos-list-item (todoDeleted)="handleTodoDelete($event)" (click)="onSelectTodo(todo)" [todo]="todo" *ngFor="let todo of todos"
+                       class="list-group-item"></app-todos-list-item>
+</div>
+

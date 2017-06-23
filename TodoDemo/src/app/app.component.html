@@ -1,0 +1,9 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <app-todo-detail [todo]="todoService.selectedTodo" (todoSaved)="onTodoSaved($event)"></app-todo-detail>
+      <app-todos-list (todoDeleted)="loadTodos()" [todos]="todos"></app-todos-list>
+    </div>
+  </div>
+</div>
